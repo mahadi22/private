@@ -1,11 +1,19 @@
-<div id="player"><embed type="application/x-shockwave-flash" src="http://cdn.sportku.com/player/flowplayer.commercial-3.2.18.swf" width="600" height="20" style="undefined" id="ply" name="ply" bgcolor="4" quality="high" allowscriptaccess="always" allowfullscreen="false" flashvars="autostart=true&amp;file=http://live.japanesemusicid.com:8000/japanesemusic%3Ftype%3D.flv"></div>
-<script type="text/javascript">
-     var stream = 'http://live.japanesemusicid.com:8000/japanesemusic';
-     var autostart = 'true';
-     var so = new SWFObject('aac.swf','ply','600','20','9','4');
-     so.addParam('allowscriptaccess','always');
-     so.addParam('allowfullscreen','false');
-     so.addVariable('autostart', autostart);
-     so.addVariable('file', stream+'%3Ftype%3D.flv');
-     so.write('player');
+<script src="http://cdn.sportku.com/player/js/flowplayer-3.2.13.min.js"></script>
+<div id="player" style="height:25;"></div>
+<script language="JavaScript">
+  flowplayer("player", "http://cdn.sportku.com/player/flowplayer.commercial-3.2.18.swf", {
+	clip: {
+		url: "http://live.japanesemusicid.com:8000/japanesemusic%3Ftype%3D.flv",
+		autoPlay: true
+    },
+	plugins: {
+	controls: {
+      autoHide: 'never',
+      sliderGradient: 'none',
+      backgroundGradient: 'none',
+      volumeSliderGradient: 'none',
+      opacity: 1.0
+   }
+  } 
+});
 </script>
