@@ -1,9 +1,9 @@
 // instructions:
 // - host a copy of callback.html and odauth.js on your domain.
-// - embed odauth.js in your app like this:
-//   <script id="odauth" src="odauth.js"
-//           clientId="YourClientId" scopes="ScopesYouNeed"
-//           redirectUri="YourUrlForCallback.html"></script>
+// - embed odauth.js in your app like this:sec
+<script id="odauth" src="odauth.js"
+clientId="000000004817970D" scopes="ScopesYouNeed"
+redirectUri="https://mahadi22.github.io/private/onedrive/callback.html"></script>
 // - define the onAuthenticated(token) function in your app to receive the auth token.
 // - call odauth() to begin, as well as whenever you need an auth token
 //   to make an API call. if you're making an api call in response to a user's
